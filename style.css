@@ -799,7 +799,8 @@ a:focus-visible {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  padding: 3.5rem 0 var(--space-m);
+  /* Extra bottom space keeps the fixed audio controls clear of the footer button. */
+  padding: 3.5rem 0 6rem;
   background: var(--black);
   border-top: 4px solid var(--crimson);
 }
@@ -968,31 +969,5 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .audio-control-button {
     transition: none;
-  }
-}
-
-/* ---------- Mobile refinements ---------- */
-@media (max-width: 560px) {
-  /* Keep the two-line name bold, but give it more breathing room on phones. */
-  .hero-name span {
-    font-size: clamp(2.7rem, 10.5vw, 4.4rem);
-  }
-
-  /* The sticky navigation is slightly taller on small screens. */
-  html {
-    scroll-padding-top: 5.5rem;
-  }
-
-  /* Leave room for the fixed audio controls at the bottom of the page. */
-  .site-footer {
-    padding-bottom: 6rem;
-  }
-}
-
-/* Keep section headings visible when reached through the sticky navigation. */
-@media (max-width: 900px) {
-  section[id],
-  header[id] {
-    scroll-margin-top: 5.5rem;
   }
 }
