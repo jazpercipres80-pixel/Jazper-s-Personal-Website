@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jazper Cipres | BS Computer Science Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Jazper Cipres, a first-year Computer Science student, singer and songwriter."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <!-- Navigation: every link jumps to a section id further down this same page -->
+    <nav class="site-navigation" aria-label="Main navigation">
+      <a class="navigation-logo" href="#home">J.C.</a>
+      <ul class="navigation-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Favorites</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#computing">Computing</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ HERO / INTRODUCTION ============ -->
+    <header id="home" class="site-header">
+      <section class="hero-section" aria-labelledby="site-title">
+        <div class="hero-content">
+          <p class="hero-program">
+            BS Computer Science &nbsp;/&nbsp; First Year &nbsp;/&nbsp; Bicol
+            University
+          </p>
+
+          <h1 id="site-title" class="hero-name">
+            <span class="name-first">Jazper</span>
+            <span class="name-last">Cipres</span>
+          </h1>
+          <p class="hero-tagline">
+            A first-year Computer Science student.<br />Still learning. Still
+            leveling up. Always becoming.
+          </p>
+          <p class="hero-actions">
+            <a class="button-link" href="#story">Read my story</a>
+            <a class="button-link button-link-outline" href="#goals"
+              >See my goals</a
+            >
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Rotating red orbit (.orbit-decoration) -->
+          <div class="orbit-decoration" aria-hidden="true">
+            <div class="ring-tilt ring-a">
+              <div class="ring-flat"><div class="ring-spin"></div></div>
+            </div>
+            <div class="ring-tilt ring-b">
+              <div class="ring-flat">
+                <div class="ring-spin ring-spin-slow"></div>
+              </div>
+            </div>
+            <div class="ring-tilt ring-c">
+              <div class="ring-flat"><div class="ring-spin"></div></div>
+            </div>
+          </div>
+
+          <figure class="profile-portrait">
+            <img
+              src="images/profile.png"
+              alt="Portrait of Jazper Cipres"
+              width="500"
+              height="500"
+            />
+            <figcaption>Jazper Cipres, BS Computer Science, Year 1</figcaption>
+          </figure>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="content-section">
+        <div class="page-container about-layout">
+          <div>
+            <h2 class="section-heading">About me</h2>
+            <p class="section-intro">
+              I'm Jazper. Computer Science is what I study, but music is where I
+              started.
+            </p>
+            <p>
+              I love singing, songwriting and making music. I also enjoy
+              football, and Pokémon has been part of my life since I was a kid.
+            </p>
+            <p>
+              I try to learn from my mistakes instead of hiding them, and I
+              adapt quickly to wherever I am. Right now I just want to keep
+              improving and make things that actually mean something to someone.
+            </p>
+          </div>
+          <blockquote class="personal-motto">
+            <p>
+              Practice like you've never won, perform like you've never lost.
+            </p>
+            <footer>My personal motto</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ============ INTERESTS ============ -->
+      <section id="interests" class="content-section content-section-alt">
+        <div class="page-container">
+          <h2 class="section-heading">My favorites</h2>
+          <div class="interests-layout">
+            <article class="interest-card interest-card-music">
+              <h3>Music</h3>
+              <p>
+                I enjoy singing, songwriting, making music and performing. It is
+                the one thing I have done for almost as long as I can remember.
+              </p>
+              <!-- Decorative equalizer bars -->
+              <div class="equalizer-decoration" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </article>
+
+            <article class="interest-card interest-card-pokemon">
+              <h3>Pokémon</h3>
+              <p>
+                Pokémon has been with me since childhood. I enjoy the games, the
+                strategy, and the creative side of the community. These are my
+                three favorites:
+              </p>
+              <ul class="favorite-list">
+                <li class="favorite-item favorite-item-corviknight">
+                  <span class="favorite-initial" aria-hidden="true">C</span>
+                  <div>
+                    <strong>Corviknight</strong>
+                    <span class="favorite-type">Steel / Flying</span>
+                    <p>It stands for freedom and flying to me.</p>
+                  </div>
+                </li>
+                <li class="favorite-item favorite-item-metagross">
+                  <span class="favorite-initial" aria-hidden="true">M</span>
+                  <div>
+                    <strong>Metagross</strong>
+                    <span class="favorite-type">Steel / Psychic</span>
+                    <p>
+                      It fits my love of analytical thinking and
+                      problem-solving.
+                    </p>
+                  </div>
+                </li>
+                <li class="favorite-item favorite-item-charizard">
+                  <span class="favorite-initial" aria-hidden="true">C</span>
+                  <div>
+                    <strong>Charizard</strong>
+                    <span class="favorite-type">Fire / Flying</span>
+                    <p>My first Pokémon, when I was around eight years old.</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="interest-card interest-card-tech">
+              <h3>Technology and programming</h3>
+              <p>
+                I like exploring technology, learning to program, solving
+                problems and trying out different tools, even when I'm not sure
+                it will work the first time.
+              </p>
+              <p class="tool-tags">
+                C &middot; Python &middot; HTML &middot; CSS &middot; Git
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STORY TIMELINE ============ -->
+      <section id="story" class="content-section">
+        <div class="page-container">
+          <h2 class="section-heading">My story</h2>
+          <p class="section-intro is-narrow">
+            These are the moments that shaped me, told with my own photographs.
+            I only included what I can show.
+          </p>
+
+          <ol class="timeline">
+            <li class="timeline-entry">
+              <div class="timeline-text">
+                <h3>Where it began</h3>
+                <p>
+                  Before the stage and the code, I was just a kid in Tabaco City
+                  with a lot of energy and a love for sound.
+                </p>
+              </div>
+              <figure class="timeline-photo">
+                <img
+                  src="images/music-journey-1.jpg"
+                  alt="Childhood photo of Jazper"
+                  loading="lazy"
+                  width="936"
+                  height="1000"
+                />
+                <figcaption>
+                  Me as a toddler.
+                  <span class="image-credit"
+                    >Photo: personal collection of Jazper Cipres.</span
+                  >
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="timeline-entry">
+              <div class="timeline-text">
+                <h3>Around age four: my parents introduced me to singing</h3>
+                <p>
+                  My parents gave me my first push into music, and I never
+                  really stopped.
+                </p>
+              </div>
+              <figure class="timeline-photo">
+                <img
+                  src="images/music-journey-2.jpg"
+                  alt="Young Jazper singing at the Baranghawon Day Care Center moving up ceremony in Tabaco City"
+                  loading="lazy"
+                  width="652"
+                  height="1000"
+                />
+                <figcaption>
+                  Holding a microphone at my day care moving up ceremony. The
+                  date printed on the photo is April 8, 2013.
+                  <span class="image-credit"
+                    >Photo: personal collection of Jazper Cipres.</span
+                  >
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="timeline-entry">
+              <div class="timeline-text">
+                <h3>Around age five: winning a singing competition</h3>
+                <p>
+                  I won a HOT FM Tabaco City singing competition. It was the
+                  first time I felt that singing could take me somewhere.
+                </p>
+              </div>
+              <figure class="timeline-photo">
+                <img
+                  src="images/music-achievement-1.jpg"
+                  alt="Young Jazper in HOT FM competition"
+                  loading="lazy"
+                  width="815"
+                  height="1000"
+                />
+                <figcaption>
+                  Me as a child wearing a number badge.
+                  <span class="image-credit"
+                    >Photo: personal collection of Jazper Cipres.</span
+                  >
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="timeline-entry">
+              <div class="timeline-text">
+                <h3>Still singing, still competing</h3>
+                <p>
+                  I kept singing and joined competitions whenever I got the
+                  chance. Some days I won, some days I learned.
+                </p>
+              </div>
+              <div class="timeline-photo-pair">
+                <figure class="timeline-photo">
+                  <img
+                    src="images/music-achievement-2.jpg"
+                    alt="Jazper receiving a trophy for winning Sta. Cruz singing competition"
+                    loading="lazy"
+                    width="750"
+                    height="1000"
+                  />
+                  <figcaption>
+                    Singing competition trophies on stage.
+                    <span class="image-credit"
+                      >Photo: personal collection of Jazper Cipres.</span
+                    >
+                  </figcaption>
+                </figure>
+                <figure class="timeline-photo">
+                  <img
+                    src="images/music-journey-3.jpg"
+                    alt="Jazper singing on stage in a white polo shirt and black pants, holding a microphone"
+                    loading="lazy"
+                    width="667"
+                    height="1000"
+                  />
+                  <figcaption>
+                    Performing at a school event.
+                    <span class="image-credit"
+                      >Photo: personal collection of Jazper Cipres.</span
+                    >
+                  </figcaption>
+                </figure>
+              </div>
+            </li>
+
+            <li class="timeline-entry">
+              <div class="timeline-text">
+                <h3>Lead vocalist of Bandalismo</h3>
+                <p>
+                  Singing in a band is different from singing alone. You depend
+                  on each other. I became the lead vocalist of Bandalismo.
+                </p>
+              </div>
+              <figure class="timeline-photo">
+                <img
+                  src="images/music-achievement-3.jpg"
+                  alt="Bandalismo's first performance at Tabaco National High School"
+                  loading="lazy"
+                  width="1000"
+                  height="750"
+                />
+                <figcaption>
+                  Bandalismo on stage in front of the school crowd.
+                  <span class="image-credit"
+                    >Photo: personal collection of Jazper Cipres.</span
+                  >
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="timeline-entry timeline-entry-highlight">
+              <div class="timeline-text">
+                <h3>Battle of the Bands 2025 champions</h3>
+                <p>
+                  Our band won Battle of the Bands 2025. This is still one of
+                  the proudest things I have done.
+                </p>
+              </div>
+              <figure class="timeline-photo">
+                <img
+                  src="images/music-achievement-4.jpg"
+                  alt="Jazper kneeling on stage steps holding a champion trophy for Battle of The Bands"
+                  loading="lazy"
+                  width="750"
+                  height="1000"
+                />
+                <figcaption>
+                  With our champion trophy and certificate.
+                  <span class="image-credit"
+                    >Photo: personal collection of Jazper Cipres.</span
+                  >
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="timeline-entry">
+              <div class="timeline-text">
+                <h3>Now: songs, covers and a bigger dream</h3>
+                <p>
+                  I keep making songs and covers, and I hope to become a
+                  singer-songwriter one day.
+                </p>
+              </div>
+              <figure class="timeline-photo">
+                <img
+                  src="images/music-journey-4.jpg"
+                  alt="Jazper making songs in Bandlab"
+                  loading="lazy"
+                  width="1000"
+                  height="750"
+                />
+                <figcaption>
+                  My late-night setup for making music.
+                  <span class="image-credit"
+                    >Photo: personal collection of Jazper Cipres.</span
+                  >
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ PATH INTO COMPUTING ============ -->
+      <section id="computing" class="content-section content-section-alt">
+        <div class="page-container computing-layout">
+          <div>
+            <h2 class="section-heading">My path into computing</h2>
+            <p class="section-intro">
+              I'm studying Computer Science at
+              <a
+                href="https://www.bicol-u.edu.ph"
+                target="_blank"
+                rel="noopener"
+                >Bicol University</a
+              >, and I'm still at the beginning.
+            </p>
+            <p>
+              So far I've been learning how to think like a programmer: break a
+              problem into smaller parts, follow the logic, and read what an
+              error is actually telling me. I have written a lot of code that
+              did not run on the first try.
+            </p>
+            <p>
+              What I enjoy most is the moment something finally makes sense. I'm
+              not an expert. I'm a learner who is getting a little more
+              comfortable with technical ideas each week.
+            </p>
+            <p>
+              I've also been experimenting outside of class. One of my creative
+              technical projects was Pokémon ROM hacking, which mixed two things
+              I love.
+            </p>
+          </div>
+
+          <div class="table-scroll">
+            <table class="skills-table">
+              <caption>
+                What I'm learning and the tools I've used
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Learning area</th>
+                  <th scope="col">Tool or language</th>
+                  <th scope="col">What I've done</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Programming fundamentals</td>
+                  <td>C</td>
+                  <td>Worked on C programming</td>
+                </tr>
+                <tr>
+                  <td>Programming exploration</td>
+                  <td>Python</td>
+                  <td>Explored Python</td>
+                </tr>
+                <tr>
+                  <td>Code editing</td>
+                  <td>Visual Studio Code</td>
+                  <td>Used it as my editor</td>
+                </tr>
+                <tr>
+                  <td>Command line</td>
+                  <td>PowerShell</td>
+                  <td>Used command-line tools</td>
+                </tr>
+                <tr>
+                  <td>Version control</td>
+                  <td>Git</td>
+                  <td>Explored Git</td>
+                </tr>
+                <tr>
+                  <td>Web basics</td>
+                  <td>HTML and CSS</td>
+                  <td>Built this portfolio</td>
+                </tr>
+                <tr>
+                  <td>Creative projects</td>
+                  <td>Pokémon ROM hacking</td>
+                  <td>Experimented with it</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GOALS ROADMAP ============ -->
+      <section id="goals" class="content-section">
+        <div class="page-container">
+          <h2 class="section-heading">My goals</h2>
+          <p class="section-intro is-narrow">
+            Three goals, all still in progress.
+          </p>
+
+          <div class="roadmap">
+            <article class="goal-card">
+              <h3>Become a skilled programmer</h3>
+              <p>
+                I want strong fundamentals first, then better problem-solving,
+                then data structures and algorithms. Eventually I want to build
+                apps and tools that people can use.
+              </p>
+              <ul class="goal-steps">
+                <li>Programming foundations</li>
+                <li>Improving my computational thinking</li>
+                <li>Learning programming tools and environments</li>
+                <li>Building personal projects</li>
+                <li>Exploring more advanced concepts</li>
+              </ul>
+            </article>
+
+            <article class="goal-card">
+              <h3>Improve my English and public speaking</h3>
+              <p>
+                I want to explain my ideas clearly and with confidence,
+                including technical ones. I've had practice, but this is
+                something I'm still working on.
+              </p>
+              <ul class="goal-steps">
+                <li>Delivered a commencement address as valedictorian</li>
+                <li>Performed in public and joined competitions</li>
+                <li>Took part in PAGSIBOL 2026</li>
+                <li>Presentations and class discussions</li>
+                <li>
+                  Next: vocabulary, grammar, pronunciation, articulation and
+                  speaking on the spot
+                </li>
+              </ul>
+            </article>
+
+            <article class="goal-card">
+              <h3>Create something meaningful</h3>
+              <p>
+                I want to bring Computer Science, music and creativity together,
+                and make things that matter to someone other than me.
+              </p>
+              <ul class="goal-steps">
+                <li>Useful software and digital tools</li>
+                <li>Projects that help students or communities</li>
+                <li>Music that people can relate to</li>
+                <li>
+                  Creative projects that mix technology and self-expression
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ REFLECTION ============ -->
+      <section id="reflection" class="content-section content-section-alt">
+        <div class="page-container reflection-content">
+          <h2 class="section-heading">Reflection</h2>
+          <p class="section-intro">
+            Building this website taught me that a webpage is two jobs at once.
+          </p>
+          <p>
+            HTML showed me how a page is structured: headings, sections, lists,
+            images. CSS showed me how that structure gets its look. I enjoyed
+            seeing the two connect, because a small change in one file could
+            completely change the page.
+          </p>
+          <p>
+            It was not always smooth. Flexbox and aligning tables were the
+            hardest parts for me. Many times things ended up in the wrong place
+            and I had to experiment, check my code and fix it little by little.
+            That debugging taught me more than reading ever did.
+          </p>
+          <p>
+            Next, I want to get better at responsive design, so my pages look
+            good on every screen without so much trial and error.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="page-container footer-layout">
+        <div>
+          <p class="footer-name">Jazper Cipres</p>
+          <p>BS Computer Science, First Year, Bicol University</p>
+          <p class="footer-close">
+            Thanks for reading. I'm still learning, and I'm just getting
+            started.
+          </p>
+        </div>
+        <a class="button-link button-link-outline" href="#home">Back to home</a>
+      </div>
+    </footer>
+
+    <!-- Audio files: background music loops; click sound plays on interactive links/buttons. -->
+    <audio
+      id="background-music"
+      src="music/background.mp3"
+      loop
+      preload="none"
+    ></audio>
+    <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+
+    <!-- Audio controls: music starts only after the visitor presses its button. -->
+    <div class="audio-controls" aria-label="Website audio controls">
+      <button
+        class="audio-control-button"
+        id="music-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Turn background music on"
+        data-audio-control
+      >
+        ♫ Music: Off
+      </button>
+      <button
+        class="audio-control-button"
+        id="sound-toggle"
+        type="button"
+        aria-pressed="true"
+        aria-label="Turn click sounds off"
+        data-audio-control
+      >
+        Click sounds: On
+      </button>
+    </div>
+
+    <script>
+      // Background music is opt-in because browsers generally block autoplay.
+      const backgroundMusic = document.getElementById("background-music");
+      const clickSound = document.getElementById("click-sound");
+      const musicToggle = document.getElementById("music-toggle");
+      const soundToggle = document.getElementById("sound-toggle");
+
+      let musicEnabled = false;
+      let clickSoundsEnabled = true;
+
+      backgroundMusic.volume = 0.25;
+      clickSound.volume = 0.35;
+
+      musicToggle.addEventListener("click", async () => {
+        if (!musicEnabled) {
+          try {
+            await backgroundMusic.play();
+            musicEnabled = true;
+            musicToggle.textContent = "♫ Music: On";
+            musicToggle.setAttribute("aria-pressed", "true");
+            musicToggle.setAttribute("aria-label", "Turn background music off");
+          } catch (error) {
+            musicToggle.textContent = "♫ Music unavailable";
+            musicToggle.setAttribute(
+              "aria-label",
+              "Background music could not be played",
+            );
+          }
+        } else {
+          backgroundMusic.pause();
+          musicEnabled = false;
+          musicToggle.textContent = "♫ Music: Off";
+          musicToggle.setAttribute("aria-pressed", "false");
+          musicToggle.setAttribute("aria-label", "Turn background music on");
+        }
+      });
+
+      soundToggle.addEventListener("click", () => {
+        clickSoundsEnabled = !clickSoundsEnabled;
+        soundToggle.textContent = clickSoundsEnabled
+          ? "Click sounds: On"
+          : "Click sounds: Off";
+        soundToggle.setAttribute("aria-pressed", String(clickSoundsEnabled));
+        soundToggle.setAttribute(
+          "aria-label",
+          clickSoundsEnabled ? "Turn click sounds off" : "Turn click sounds on",
+        );
+      });
+
+      // Play a quiet retro click for links and buttons, except the audio controls.
+      document.addEventListener("click", (event) => {
+        if (!clickSoundsEnabled) return;
+
+        const interactiveElement = event.target.closest("a, button");
+        if (
+          !interactiveElement ||
+          interactiveElement.hasAttribute("data-audio-control")
+        ) {
+          return;
+        }
+
+        clickSound.currentTime = 0;
+        const playback = clickSound.play();
+        if (playback && typeof playback.catch === "function") {
+          playback.catch(() => {});
+        }
+      });
+    </script>
+  </body>
+</html>
